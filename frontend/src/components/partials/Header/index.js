@@ -6,7 +6,7 @@ import { HeaderArea} from './styled';
 import { isLogged } from '../../../helpers/AuthHandler'
 
 const Header = () => {
-    let logged = false; //isLogged();
+    let logged = isLogged();
 
     return (
         <HeaderArea>
@@ -37,7 +37,7 @@ const Header = () => {
                         {!logged && 
                             <>
                                 <li>
-                                    <Link to="/singin">Login</Link>
+                                    <Link to="/signin">Login</Link>
                                 </li>
                                 <li>
                                     <Link to="/singup">Cadastrar</Link>
