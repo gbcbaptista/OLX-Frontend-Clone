@@ -54,10 +54,16 @@ nav {
         margin-left: 20px;
         margin-right: 20px;
 
-        a {
+        a, button {
+            font-family: 'Open Sans', sans-serif;
+            border: 0;
+            background: none;
+            outline: 0;
             color: #000;
             font-size: 14px;
             text-decoration: none;
+            cursor: pointer;
+            
 
             &:hover {
                 color:#999
