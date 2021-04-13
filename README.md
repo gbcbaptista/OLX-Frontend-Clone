@@ -5,6 +5,6 @@ I started just with frontend, so for to test Login and other things i'm using an
 For to connect your own API built with Node.js, PHP whatever, you just need to change the file OlxAPI.js.
 
 The email and password that works for test in the API:<br/>
-email: suporte@b7web.com.br
+email: gbcbaptista@teste.com
 <br/>
-password: 12345
+password: teste
