@@ -62,6 +62,13 @@ const  OlxAPI = {
             {name, email, password, state: stateLoc}
         );
         return json;
+    },
+
+    getCategories: async () => {
+        const json = await apiFetchGet (
+            '/categories'
+        );
+        return json.categories;
     }
 
     /* código para buscar os estados no servidor
