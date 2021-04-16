@@ -55,6 +55,7 @@ padding: 20px 0;
 
     .categoryItem {
         width: 25%;
+        min-width: 175px;
         display: flex;
         align-items: center;
         color: #000;
