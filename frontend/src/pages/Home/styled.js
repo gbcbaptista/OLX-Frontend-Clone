@@ -91,6 +91,11 @@ export const PageArea = styled.div`
     .list {
         display: flex;
         flex-wrap: wrap;
+
+        .adItem {
+            width: 25%;
+            min-height: 275px;
+        }
     }
 
     .seeAllLink {
