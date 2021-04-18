@@ -36,6 +36,7 @@ padding: 20px 0;
         }
 
         button {
+            font-family: 'Open Sans', sans-serif;
             background-color: #49AEEF;
             font-size: 15px;
             border: 0;
@@ -44,6 +45,10 @@ padding: 20px 0;
             height: 40px;
             padding: 0 w0px;
             cursor: pointer;
+
+            &:hover {
+                background-color: #0099ff;
+            }
         }
     }
 }
@@ -79,5 +84,25 @@ padding: 20px 0;
 `;
 
 export const PageArea = styled.div`
+    h2 {
+        font-size: 20px;
+    }
 
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .seeAllLink {
+        font-family: 'Open Sans', sans-serif;
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    p {
+        font-family: sans-serif;
+    }
 `;
