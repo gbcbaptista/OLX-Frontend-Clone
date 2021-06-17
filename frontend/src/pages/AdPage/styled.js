@@ -1,13 +1,13 @@
 import styled, {keyframes} from 'styled-components';
 
 const loading_1 = keyframes`
-from {background-color: #DDD;}
-  to {background-color: #CCC;}
+from {background-color: #d9d9d9;}
+  to {background-color: #bfbfbf;}
 `;
 
 export const Fake = styled.div`
 height: ${props=>props.height || 20}px;
-background-color: #DDD;
+background-color: #d9d9d9;
 animation-name: ${loading_1};
 animation-duration: .75s;
 animation-direction: alternate;
