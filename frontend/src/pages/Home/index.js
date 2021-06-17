@@ -25,8 +25,8 @@ const Page = () => {
     useEffect (() => {
         const getRecentAds = async () => {
             const json = await api.getAds({
-                sort: 'desc',
-                limit: 12
+                sort: 'asc',
+                limit: 16
             });
             setAdList(json.ads);
         }
