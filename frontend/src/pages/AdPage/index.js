@@ -3,10 +3,8 @@ import { useParams } from "react-router-dom";
 import { PageArea, Fake} from './styled';
 import useApi from '../../helpers/OlxAPI'
 
-
-
-
-
+import { Slide } from "react-slideshow-image";
+import 'react-slideshow-image/dist/styles.css'
 import { PageContainer } from '../../components/MainComponents'
 
 const Page = () => {
@@ -40,7 +38,16 @@ const formatDate = (date) => {
                 <div className="leftSide">
                     <div className="box">
                         <div className="adImage">
-                            {loading && <Fake height={300} />}                            
+                            {loading && <Fake height={300} />}  
+                            {adInfo.images && 
+                                <Slide>
+                                    {adInfo.images.map((img, k) => 
+                                        <div key={k} className="each-slide">
+                                            <img src={img} alt="" />
+                                        </div>
+                                    )}
+                                </Slide>
+                            }
                         </div>
                         <div className="adInfo">
                             <div className="adName">

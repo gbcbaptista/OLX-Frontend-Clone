@@ -34,17 +34,46 @@ export const PageArea = styled.div`
     flex: 1;
     margin-right: 20px;
 
-    .adImage {
+    .box {
+        display: flex;
+    }
 
+    .adImage {
+        width: 320px;
+        height: 320px;
+        margin-right: 20px;
+
+        .each-slide img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            height: 320px;
+        }
     }
     .adInfo{
-        padding: 10px;
+        flex: 1;
 
         .adName{
+            margin: 0;
             margin-bottom: 10px;
+
+            h2 {
+                margin-top: 20px;
+            }
+            small {
+                color: #999
+            }
         }
         .adDescription {
 
+            hr {
+                margin: 0;
+            }
+
+            small {
+                color: #999
+            }
         }
 
     }
