@@ -46,7 +46,7 @@ const apiFetchGet = async (endpoint, body = []) => {
     return json;
 }
 
-const  OlxAPI = {
+const OlxAPI =  {
 
     login: async (email, password) => {
         const json = await apiFetchPost(

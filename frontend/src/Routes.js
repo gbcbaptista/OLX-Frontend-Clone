@@ -5,10 +5,11 @@ import About from './pages/About';
 import NotFound from './pages/NotFound';
 import Signin from './pages/Signin';
 import Signup from './pages/Signup';
+import AdPage from './pages/AdPage';
 
 
 
-export default () => {
+const Routes = () => {
     return(
         <Switch>
             <Route exact path="/">
@@ -27,9 +28,15 @@ export default () => {
                 <Signup />
             </Route>  
 
+            <Route exact path="/ad/:id">
+                <AdPage />
+            </Route> 
+
             <Route>
                 <NotFound />
             </Route>
         </Switch>
     )
 }
+
+export default Routes;

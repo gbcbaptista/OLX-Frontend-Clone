@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import { PageArea } from './styled';
 import useApi from '../../helpers/OlxAPI'
 import { doLogin } from '../../helpers/AuthHandler'

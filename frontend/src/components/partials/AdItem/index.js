@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Item } from './styled';
 
-export default (props) => {
+const AdItem = (props) => {
     let price = '';
 
     if (props.data.priceNegotiable) {
@@ -13,8 +13,9 @@ export default (props) => {
 
     return(
     <Item className="adItem">
-        <Link to={`/ad/${props.dataid}`}>
+        <Link to={`/ad/${props.data.id}`}>
             <div className="itemImage">
+                ola
                 <img src={props.data.image} alt=""/>
             </div>
             <div className="itemName">{props.data.title}</div>
@@ -23,3 +24,5 @@ export default (props) => {
     </Item>
     );
 }
+
+export default AdItem;

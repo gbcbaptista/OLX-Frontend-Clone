@@ -25,7 +25,7 @@ const Page = () => {
     useEffect (() => {
         const getRecentAds = async () => {
             const json = await api.getAds({
-                sort: 'asc',
+                sort: "asc",
                 limit: 16
             });
             setAdList(json.ads);
@@ -64,8 +64,9 @@ const Page = () => {
                 <PageArea>
                     <h2>Anúncios Recentes</h2>
                             <div className="list">
-                                {adList.map((i,k)=>
-                                    <AdItem key={k} data={i} />
+                                
+                                {adList.map((i,k)=>                                    
+                                    <AdItem key={k} data={i} />                                
                                 )}
                             </div>
                             <Link to="/ads" className="seeAllLink">Ver Todos</Link>

@@ -1,8 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
 import { FooterArea} from './styled';
 
-const Header = () => {
+const Footer = () => {
     return (
         <FooterArea>
             ...
@@ -10,4 +9,4 @@ const Header = () => {
     );
 }
 
-export default Header;
+export default Footer;
