@@ -26,7 +26,7 @@ const Page = () => {
         const getRecentAds = async () => {
             const json = await api.getAds({
                 sort: "asc",
-                limit: 16
+                limit: 12
             });
             setAdList(json.ads);
         }
