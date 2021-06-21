@@ -48,7 +48,7 @@ const Header = () => {
                                     <Link to="/signup">Cadastrar</Link>
                                 </li>
                                 <li>
-                                    <Link to="/singin" className="button">Poste um anúncio</Link>
+                                    <Link to="/post-an-ad" className="button">Poste um anúncio</Link>
                                 </li>
                             </>
                         }                        
